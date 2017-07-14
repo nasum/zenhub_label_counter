@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Zenhub Label Counter",
+  "version": "0.0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "css": ["css/styles.css"],
+      "js": ["js/jquery-3.2.1.min.js", "js/script.js"]
+    }
+  ]
+}

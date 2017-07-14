@@ -1,0 +1,13 @@
+.zenhub_lavel_counter_container {
+  position:absolute;
+  right: 0;
+  top: 0;
+  background-color: #f0f0f0;
+  z-index: 10000;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.label-list li {
+  list-style: none;
+}
