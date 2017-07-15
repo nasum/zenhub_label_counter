@@ -1,4 +1,14 @@
 $(document).ready(function(){
+  $('a').on('click', () => { $('.zenhub_lavel_counter_container').hide() })
+  $('a[zh-id="boards"]').on('click', () => { init() } )
+  if(location.hash.includes('#boards')) init()
+})
+
+function init () {
+  if($('.zenhub_lavel_counter_container')) {
+    $('.zenhub_lavel_counter_container').show()
+  }
+
   let container = $("<div></div>",{
     class: "zenhub_lavel_counter_container",
   })
@@ -15,7 +25,7 @@ $(document).ready(function(){
   container.append(button)
   container.append(labelList)
   $('body').append(container)
-})
+}
 
 function calcFunc () {
   let countMap = new Map()
